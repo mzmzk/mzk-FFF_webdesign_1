@@ -1,0 +1,370 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+
+/*	clearfix------------------------------*/
+.clearfix:after {/*for modern browser*/
+   content: "";
+   display: block;
+   clear: both;
+}
+/* ----------------------------------------------------------------------------------------------------
+
+all
+
+---------------------------------------------------------------------------------------------------- */
+body{
+  font-size: 16px;
+  color: #3f312b;
+  font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, 'ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN W3', 'Hiragino Kaku Gothic ProN', 'ãƒ¡ã‚¤ãƒªã‚ª', Meiryo, 'ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯', 'MS PGothic', sans-serif;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  box-sizing: border-box;
+  background-color: #a5c9c1;
+}
+
+/* list style */
+ul, ol{
+	list-style-type:none;
+}
+
+a{
+ text-decoration:none;
+ color: #006a6c;
+ font-family: 'Pacifico', cursive;
+}
+
+img, input, select, textarea {
+	vertical-align: middle;
+}
+/* link */
+
+
+/* ----------------------------------------------------------------------------------------------------
+
+header
+
+---------------------------------------------------------------------------------------------------- */
+header, footer{
+   width: 100%;
+   background-color:#e0ffef;
+   overflow: hidden;
+}
+
+header{
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.wrap{
+   background-color:#e0ffef;
+   max-width: 960px;
+   margin: 5px auto;
+}
+
+h1{
+  display:block;
+  font-size: 3.5em;
+  font-weight: bold;
+  font-family: 'Bad Script', cursive;
+  color: #006a6c;
+  float: left;
+  margin: 35px 10px;
+  padding-top: 10px;
+}
+
+h1 img{
+  width:270px;
+  margin-top: -35px;
+}
+
+.menu{
+  display: block;
+  float: right;
+  margin: 35px 0;
+}
+
+.menu li {
+  display: inline-block;
+  float: left;
+  margin:10px 1.5em;
+  text-decoration:none;
+  color: #006a6c;
+}
+
+.pankuzu{
+  background-color: #a5c9c1;
+}
+
+.breadcrumb li{
+  display:inline;/*横に並ぶように*/
+  list-style: none;
+  margin-left: 5px;
+  font-size:0.9em;
+}
+
+.breadcrumb li a span{
+  color: gray;
+}
+
+.breadcrumb li:after{/* >を表示*/
+  content: '>';
+  padding: 0 2px;
+}
+
+.breadcrumb li:last-child:after{
+  content: '';
+}
+
+.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+/*--------------------------------------------------------------
+
+contents
+
+----------------------------------------------------------------*/
+.contents{
+  max-width: 960px;
+  margin:20px auto;
+  padding:10px 10px;
+  background-color: #bee0ce;
+  border-radius: 1.5em;
+  box-shadow: 1px solid gray;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+h2{
+  display: inline-block;
+  margin:15px auto;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Bad Script', cursive;
+  color: gray;
+}
+
+hr {
+  border-top: 0.2em dotted #006a6c;
+}
+
+.sidebar{
+  float: left;
+  width: 25%;
+  margin:30px auto;
+}
+
+#sidemenu{
+   margin:30px auto;
+}
+
+#sidemenu li{
+   display: block;
+   background-color: #e0ffef;
+   border-radius: 1.2em;
+   padding:0.5em;
+   margin: 15px 10px;
+}
+
+a:hover, img:hover, input:hover{
+  opacity: 0.7;
+}
+
+#sidemenu i{
+  float: right;
+}
+
+.SNS ul, .SNS li, .recipe button, .collection .search{
+  display: inline-block;
+  float: right;
+  margin:3px;
+  margin-bottom: 30px;
+}
+
+input, button, .sns_icon i{
+    display: inline-block;
+    border-radius: 25px;
+    text-decoration: none;
+    border:none;
+    color: #FFF;
+    background-image: -webkit-linear-gradient(45deg, #8ebf6c 15%, #65a260 110%);
+    background-image: linear-gradient(45deg, #8ebf6c 15%, #65a260 110%);
+    transition: .4s;
+    padding: 8px;
+}
+
+#catch{
+  margin:30px auto;
+}
+
+#catch img, #catch iframe{
+  width:220px;
+  height: 130px;
+  margin:22px 13px;
+}
+
+form{
+  margin:15px 10px;
+}
+
+main{
+  float:right;
+  width:73%;
+  background-color: #e0ffef;
+  border-radius: 1.5em;
+  padding:3% 3%;
+  box-sizing: border-box;
+}
+
+#slideshow img{
+  display: none;
+  position: absolute;
+}
+/*
+ * Slideshow
+ */
+#slideshow {
+  overflow: hidden;
+  position: relative;
+  height: 340px;
+  width: 540px;
+  margin-left:40px;
+  margin-top:10px;
+}
+
+/* JavsScript 無効時 */
+.no-js .slideshow img:first-child {
+    display: inline;
+}
+
+.sentence h2{
+  display: inline-block;
+  font-size: 1.8em;
+  font-family: 'Bad Script', cursive;
+  color: #006a6c;
+  padding-top: 10px;
+}
+
+.sentence h2::after{
+}
+
+.sentence p{
+  display: block;
+  margin:20px auto;
+  line-height: 1.2em;
+}
+
+.resipe{
+ margin:30px auto;
+}
+
+.recipe p{
+  display: inline-block;
+  margin:15px auto;
+  line-height: 1em;
+}
+
+#images p{
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  font-size:1.2em;
+}
+
+#images p strong{
+  position: absolute;
+  display: block;
+  z-index: 1;
+  bottom: 0;
+  width: 295px;
+  height: 75px;
+  text-align: left;
+  padding: 5px;
+  color: #006a6c;
+  font-family: 'Bad Script', cursive;
+  opacity: 1;
+  left: -100%;
+}
+
+#images p span{
+  position: absolute;
+  display: block;
+  z-index: 0;
+  bottom: 0;
+  width: 295px;
+  height: 100px;
+  background:#e0ffef;
+  opacity: 0;
+}
+
+#slideshow2{
+  width: 100%;
+  padding:5%;
+}
+
+#slideshow2 img{
+  width: 35%;
+  margin:25px 27px;
+  float: left;
+  padding: 0.2em 0.5em;
+  background: white;
+  border-top: solid 4px  #65a260;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.22);
+}
+
+.back-to-top i{
+    color:#FFFFFF;
+    font-size:1.2em;
+}
+
+.back-to-top{
+  position: absolute;
+  left: 56%;
+  margin-top: -13px;
+}
+
+.no-js .back-to-top{
+  display: none;
+}
+
+footer{
+  height: 200px;
+  padding: 5px;
+}
+
+footer .menu li, footer .form, footer .logo img{
+  display: inline-block;
+  float: left;
+  margin:0 0.9em;
+  text-decoration:none;
+  color: #006a6c;
+  font-size:0.8em;
+}
+
+footer .SNS li, footer .logo img{
+  margin:-10px 3px;
+}
+
+footer .logo .menu{
+  float: left;
+  margin:10px 20px;
+}
+
+.copyright{
+  float: left;
+  margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
